@@ -1,0 +1,99 @@
+* {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+title {
+  display: none;
+}
+
+body {
+  background-color: teal;
+  min-height: 100vh;
+  min-width: 100vw;
+  flex-direction: column;
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 3px;
+  width: 250px;
+}
+
+form {
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-title {
+  width: 100%;
+  font: 30px Calibri;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+label {
+  width: 100%;
+  justify-content: flex-start;
+  font: 20px Calibri;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+input {
+  font: 20px Calibri;
+  padding: 5px 8px;
+  border-radius: 2px;
+  color: teal;
+  width: 100%;
+}
+
+input[type=submit] {
+  color: black;
+  font: 23px Calibri;
+  background-color: #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+.msg-wrap {
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.success-msg {
+  margin-top: 20px;
+  color: white;
+  font: 50px Calibri;
+}
+
+.err-msg {
+  text-align: center;
+  margin-top: 5px;
+  font: 16px Calibri;
+  max-width: 100%;
+  white-space: normal;
+  color: white;
+}
+
+.hidden {
+  opacity: 0;
+}
